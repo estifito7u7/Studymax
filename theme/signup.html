@@ -16,6 +16,7 @@
           <h1>StudyMax</h1>
         </a>
         <form class="header__search">
+          {% csrf_token %}
           <label>
             <svg
               version="1.1"
@@ -71,6 +72,7 @@
             <h2 class="auth__tagline">Find your study partner</h2>
 
             <form class="form" action="#">
+              {% csrf_token %}
               <div class="form__group form__group">
                 <label for="fullname">Full Name</label>
                 <input id="fullname" name="fullname" type="text" placeholder="e.g. Dennis Ivy" />
