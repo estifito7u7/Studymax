@@ -1,1 +1,1 @@
-web: gunicorn studymax.wsgi --log-file -
+web: gunicorn studymax.wsgi --log-file - && python manage.py collectstatic
